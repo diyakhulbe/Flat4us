@@ -1,0 +1,160 @@
+*{box-sizing:border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+    /*1 rem =10 px*/
+  }
+
+  .header {
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: rgba(249, 249, 247, 0.555); */
+    background-color:#337ab7;
+  }
+
+  .header .logo {
+    /* align-items:left; */
+    padding: 0em;
+    height: 8rem;
+    /* width:20rem; */
+    text-decoration: none;
+  }
+
+  .navbar {
+    text-decoration: none;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+
+  .anchor:link,
+  .anchor:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:white;
+    font-style: bold;
+  }
+
+  .anchor:hover,
+  .anchor:active {
+    color: rgb(10, 204, 253);
+    transition: all 0.3s;
+  }
+  #p2{
+    border-radius: 6px;
+    background: #fff;
+    position:absolute;
+    top:0; 
+    transform:translate(-50%,-50%) scale(0.1); ;
+    visibility: hidden;
+    transition:transform 0.4s,top 0.4s;
+    background-color: aquamarine;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Make the images invisible by default */
+  .Containers {
+      margin-left: 10px;
+      height: 500px;
+      overflow: hidden;
+      width:661px;
+  }
+  /* forward & Back buttons */
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption Info */
+  .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Worknumbering (1/3 etc) */
+  .MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  
+  /* Faint animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
