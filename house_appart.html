@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user page</title>
+    <style>
+        * {
+            /* padding: 0;
+            margin: 0; */
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+          }
+      
+          html {
+            font-size: 62.5%;
+            /*1 rem =10 px*/
+          }
+      
+          .header {
+            padding: 0 4.8rem;
+            height: 10rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* color: rgba(249, 249, 247, 0.555); */
+            background-color:#337ab7;
+          }
+      
+          .header .logo {
+            /* align-items:left; */
+            padding: 0em;
+            height: 8rem;
+            /* width:20rem; */
+            text-decoration: none;
+          }
+      
+          .navbar {
+            text-decoration: none;
+          }
+      
+          .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 4rem;
+            text-transform: uppercase;
+            text-decoration: none;
+      
+          }
+      
+          .anchor:link,
+          .anchor:visited {
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color:white;
+            font-style: bold;
+          }
+      
+          .anchor:hover,
+          .anchor:active {
+            color: rgb(10, 204, 253);
+            transition: all 0.3s;
+          }
+      
+          body {
+            background-color: #E8E3D3;
+          }</style>
+</head>
+<header class="header">
+    <img src="logo.png" alt="logo" class="logo">
+    <nav class="navbar">
+      <ul class="heads" style="color:blue;">
+        <li><a class="anchor" href="index.html">home</a></li>
+        <li><a class="anchor" href="buy.html">buy</a></li>
+        <li><a class="anchor" href="http://localhost/filess/index.php">sell</a></li>
+        <li><a class="anchor" href="About.html">About</a></li>
+        <li><a href="buy.html"> <button style="background-color: #337ab7; color: white;">BOOK NOW</button></a></li>
+      </ul>
+  
+    </nav>
+  </header>
+<body>
+    <h1 STYLE="display: flex;justify-content: center">WANNA ADD ANOTHER HOUSE</h1>
+<section style="justify-content: center;
+display:flex;">
+<div style="border:2px black solid;
+    box-shadow: 2px;
+    box-shadow: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width:50%">
+   <form action="" style="font-size: 20px;
+   margin-left:10px;margin-bottom:10px">
+       <h2><b>SELECTED CATEGORY</b></h2> 
+       <p>Properties for sales:Houses and Apartments</p><hr>
+       <h2><B>INCLUDE SOME DETAILS:</B></h2>
+       <label>type:</label><br><br>
+       <input type="radio" name="n1">Apartments
+       <input type="radio" name="n1">Builder floors
+       <input type="radio" name="n1">houses
+       <br><br>
+       Bedrooms:<br><br>
+       <input type="radio" name="n1">1
+       <input type="radio" name="n1">2
+       <input type="radio" name="n1">3
+       <input type="radio" name="n1">4
+       <input type="radio" name="n1">4+
+       <br><br>
+       Bathrooms:<br><br>
+       <input type="radio" name="n1">1
+       <input type="radio" name="n1">2
+       <input type="radio" name="n1">3
+       <input type="radio" name="n1">4
+       <input type="radio" name="n1">4+
+       <br><br>
+       Furnishing:<br><br>
+       <input type="radio" name="n1">Furnished
+       <input type="radio" name="n1">Semi-Furnished
+       <input type="radio" name="n1">Unfurnished
+       <br><br>
+       Construction Status:<br><br>
+       <input type="radio" name="n1">New Launch
+       <input type="radio" name="n1">Ready to Move
+       <input type="radio" name="n1">Under Construction
+       <br><br>
+       <h3><b>PRICE:</b></h3>
+       <input type="text">
+       <br>
+       <h3>UPLOAD PICTURES:</h3>
+       <input type="file"><br>
+       <br>
+       <hr>
+       <h3>REVIEW YOUR DETAILS:</h3>
+       <BR>
+        Name: <input type="text"><br><br>
+        Phone number:<input type="tel"><br><br>
+       <input type="submit">
+   </form>
+</div> 
+</section>
+</body>
+</html>

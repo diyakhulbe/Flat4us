@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homes</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+
+    html {
+      font-size: 62.5%;
+      /*1 rem =10 px*/
+    }
+
+    .header {
+      padding: 0 4.8rem;
+      height: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* color: rgba(249, 249, 247, 0.555); */
+      background-color:#337ab7;
+    }
+
+    .header .logo {
+      /* align-items:left; */
+      padding: 0em;
+      height: 8rem;
+      /* width:20rem; */
+      text-decoration: none;
+    }
+
+    .navbar {
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+
+    }
+
+    .anchor:link,
+    .anchor:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color:white;
+      font-style: bold;
+    }
+
+    .anchor:hover,
+    .anchor:active {
+      color: rgb(10, 204, 253);
+      transition: all 0.3s;
+    }
+
+    body {
+      background-color: #E8E3D3;
+
+    }
+
+    .quotes {
+      /* margin-left: 1.5cm;
+    margin-top: 1.25cm; */
+      font-size: 5rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      color:black;
+      border-radius: 2rem;
+    }
+
+    .house1{
+      margin-left: 1cm;
+      margin-right: 1cm;
+      width:1460px;
+      height:700px;
+      
+    }
+
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+    }
+    .box {
+      position: absolute;
+      top: 14cm;
+      left: 9.5cm;
+      width: 870px;
+      height: 100px;
+
+    }
+    .search-bar{
+      position: absolute;
+      width:800px; 
+      height: 50px; 
+      border-radius: 1.5rem 0.5rem 0.5rem 1.5rem; 
+      top: 675px;
+      left: 9.5cm;
+      padding: 20px;
+    }
+    .search-icon{
+      position: absolute;
+      height: 50px; 
+      width:68px;
+      left:30.75cm;
+      top:675px;
+      background-color: #337ab7;
+      color: #fff;
+      border-radius: 0.5rem 1.5rem 1.5rem 0.5rem; 
+    }
+    ::placeholder{
+    padding-left: 15px;
+    font-size:15px;
+    }
+    .bl{
+      background-color: #337ab7;
+      color: #fff;
+      border-radius: .5rem;
+      width:90px;
+      height:20px;
+    }
+    .pp{
+      margin-top: 14cm;
+      font-size: 3rem;
+      position:absolute;
+      width:800px;
+      left:1cm;
+    }
+    .pp1{
+      margin-top: 16.5cm;
+      margin-left: 3cm;
+      margin-right: 1cm;
+    }
+    .house2{
+      width:300px;
+      border-radius: 1.5rem;
+      margin-right: 25px;
+      height:150px;
+    }
+    #pp1:hover{
+      transform: scale(1.1);
+    }
+    #pp2:hover{
+      transform: scale(1.1);
+    }
+    #pp3:hover{
+      transform: scale(1.1);
+    }
+    #pp4:hover{
+      transform: scale(1.1);
+    }
+    
+  </style>
+
+</head>
+
+
+  <header class="header">
+    <img src="logo.png" alt="logo" class="logo">
+    <nav class="navbar">
+      <ul class="heads" style="color:blue;">
+        <li><a class="anchor" href="index.html">home</a></li>
+        <li><a class="anchor" href="buy.html">buy</a></li>
+        <li><a class="anchor" href="http://localhost/filess/index.php">sell</a></li>
+        <li><a class="anchor" href="About.html">About</a></li>
+        <li><a href="buy.html"> <button class="bl">BOOK NOW</button></a></li>
+      </ul>
+
+    </nav>
+  </header><body>
+  <div class="container">
+    <div style="margin-top: 0.2cm;">
+      <img class="house1" src="house.jpg">
+    </div>
+    <div class="box">
+      <h1 class="quotes">"A house is made of: bricks and beams.<br>
+        &nbsp;A home is made of: hopes and dreams."
+      </h1>
+    </div>
+    <div >
+      <input type="text" placeholder="Search.." class="search-bar">
+      <button type="submit" class="search-icon"><ion-icon name="search-outline" style="width:1cm; height: 0.5cm;"></ion-icon></button>
+      
+    </div>
+  </div>
+  <div class="pp">
+    <h1>Popular properties <ion-icon name="arrow-forward-circle-outline"></ion-icon></h1>
+  </div>
+  <div class="pp1">
+    <a href="pp1.html"> <img src="pp1.png" class="house2" id="pp1"></a>
+    <a href="pp1.html"><img src="pp2.png" class="house2" id="pp2"></a> 
+    <a href="pp1.html"><img src="pp3.png" class="house2" id="pp3"></a>
+    <a href="pp1.html"><img src="pp4.png" class="house2" id="pp4"></a>
+  </div><br><br>
+  
+      <div style="text-align: center;">
+        <img src="offer.png">
+      </div><br>
+      <br>
+      <div style="background-color:#FBF7F2;text-align:center;color:#86A999;font-size: 2rem;">
+        Contact us as at: www.flat4us@gmail.com
+        Phone no.: 1234******
+      </div>
+<br>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>

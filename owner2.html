@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      /* padding: 0;
+      margin: 0; */
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+
+    html {
+      font-size: 62.5%;
+      /*1 rem =10 px*/
+    }
+
+    .header {
+      padding: 0 4.8rem;
+      height: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* color: rgba(249, 249, 247, 0.555); */
+      background-color:#337ab7;
+    }
+
+    .header .logo {
+      /* align-items:left; */
+      padding: 0em;
+      height: 8rem;
+      /* width:20rem; */
+      text-decoration: none;
+    }
+
+    .navbar {
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+
+    }
+
+    .anchor:link,
+    .anchor:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color:white;
+      font-style: bold;
+    }
+
+    .anchor:hover,
+    .anchor:active {
+      color: rgb(10, 204, 253);
+      transition: all 0.3s;
+    }
+
+    body {
+      background-color: #E8E3D3;
+    }
+        *{
+            font-family:  Arial, sans-serif;
+        }
+        .p1{
+              display: flex;
+              justify-content: center;
+              width: 96%;
+              margin: 2px;
+              border-radius: 5px;
+              background: lightskyblue;
+              cursor:pointer
+        }
+    </style>
+</head>
+<body style="background: color #e4dec8;">
+    <header class="header">
+        <img src="logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+          <ul class="heads" style="color:blue;">
+            <li><a class="anchor" href="index.html">home</a></li>
+            <li><a class="anchor" href="buy.html">buy</a></li>
+            <li><a class="anchor" href="http://localhost/filess/index.php">sell</a></li>
+            <li><a class="anchor" href="About.html">About</a></li>
+            <li><a href="buy.html"> <button style="background-color: #337ab7; color: white;">BOOK NOW</button></a></li>
+          </ul>
+      
+        </nav>
+      </header>
+
+    <section style="display: flex; justify-content: center;">
+    <div>
+    <div style="display:flex;" >
+        <div style="border:2px solid BLACK;margin:15px;
+    
+        box-shadow: 5px 5px 5px 1px;
+        border-radius: 5px;">
+             
+             <div style="display:flex ;padding:25px;padding-top:30px">
+                <ion-icon style="font-size: 85px; "name="person-circle-outline"></ion-icon>
+                <div style="margin-left:72px;">
+                <p>Deepak Builders</p>
+                <p>+918273654398</p>
+                </div>
+             </div> 
+              <button class="p1">Edit profile</button> 
+        </div>
+        <div style="border:2px solid BLACK;margin:10px;
+    
+        box-shadow: 5px 5px 5px 1px;
+        border-radius: 5px;">
+            <div style="display:flex ;padding:10px"><p>Total Properties:4</p>
+            <p style="padding-left: 180px;">Available:3</p>
+            </div>
+            <div style="display:flex;padding:10px">
+            <p>Sold:0</p>
+            <p style="padding-left: 250px;">Occupied:1</p>
+            </div>
+            <button class="p1" onclick="drop()">Add more</button>
+        </div>
+        <div id="p4" style="position: absolute;
+        top: 0;
+        left: 78%;
+        transform: translate(30%,-50%) scale(0.1);
+        visibility: hidden;
+        transition: transform 0.4s,top 0.4s;">
+            <p>
+                <a href="pg.html">Add PG/Flat</a><br>
+                <a href="house_appart.html">Add HOUSES</a>
+            </p>
+            </div>
+            
+           
+    </div>
+         <div style="display:flex;justify-content: center;">   
+              <h1>PROPERTIES:</h1> 
+          </div>
+          
+          <div  style="display:flex;margin-top:20px">
+            <div style="display:flex;width:250px ;">
+            <img style="padding-right:0px;width:250px  " src="pp1.png" alt=""> 
+             </div>
+             <div style="padding-left: 30px;">
+            <p>3 BHK ready to Occupy flat for sale in clement town, dehradun,uttrakhand</p>
+            <p>Price:25L-44L</p>
+            <p> Area:1150sq</p>
+            <p>Status:Ready to move</p>
+            <p><b><h4>Available</h4></b></p>
+           </div>
+            </div>
+            <div  style="display:flex;margin-top:20px">
+                <div style="display:flex;width:250px ;">
+                <img style="padding-right:0px;width:250px  " src="pexels-rachel-claire-4846436.jpg" alt=""> 
+                 </div>
+                 <div style="padding-left: 30px;">
+                <p>2 BHK ready to Occupy flat for sale in Rohini sector 27,New Delhi</p>
+                <p>Price:2L-30L</p>
+                <p> Area:1050sq</p>
+                <p>Status:Ready to move</p>
+                <p><b><h4>Available</h4></b></p>
+               </div>
+                </div>
+                <div  style="display:flex;margin-top:20px">
+                    <div style="display:flex;width:250x;">
+                    <img style="padding-right:0px;width:250px " src="ph1.webp" alt=""> 
+                     </div>
+                     <div style="padding-left: 30px;">
+                    <p>2 BHK ready to Occupy flat for sale in Rohini sector 29, New Delhi</p>
+                    <p>Price:5L-44L</p>
+                    <p> Area:1000sq</p>
+                    <p>Status:Ready to move</p>
+                    <p><h4><b>Occupied</b></h4></p>
+                   </div>
+                    </div>
+                    <div  style="display:flex;margin-top:20px">
+                        <div style="display:flex;width:250x;">
+                        <img style="padding-right:0px;width:250px " src="pexels-mark-mccammon-2724749.jpg" alt=""> 
+                         </div>
+                         <div style="padding-left: 30px;">
+                        <p>3 BHK ready to Occupy flat for sale in Ashima Vihar, lane 5c,dehradun</p>
+                        <p>Price:7L-50L</p>
+                        <p> Area:1250sq</p>
+                        <p>Status:Ready to move</p>
+                        <p><b><h4>Available</h4></b></p>
+                       </div>
+                        </div>
+                        
+    </div> 
+    
+        </section>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let d=document.getElementById('p4');
+    function drop()
+    {
+        d.style.top="32%";
+        d.style.left="80%";
+        d.style.padding="16px";
+        d.style.transform="translate(-50%,-70%) scale(1)"; 
+        d.style.visibility="visible";
+        
+
+    }
+</script>
+</body>
+</html>

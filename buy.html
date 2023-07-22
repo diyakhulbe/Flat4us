@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+
+    html {
+      font-size: 62.5%;
+      /*1 rem =10 px*/
+    }
+
+    .header {
+      padding: 0 4.8rem;
+      height: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* color: rgba(249, 249, 247, 0.555); */
+      background-color:#337ab7;
+    }
+
+    .header .logo {
+      /* align-items:left; */
+      padding: 0em;
+      height: 8rem;
+      /* width:20rem; */
+      text-decoration: none;
+    }
+
+    .navbar {
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+
+    }
+
+    .anchor:link,
+    .anchor:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color:white;
+      font-style: bold;
+    }
+
+    .anchor:hover,
+    .anchor:active {
+      color: rgb(10, 204, 253);
+      transition: all 0.3s;
+    }
+
+    body {
+      background-color: #E8E3D3;
+    }
+    .btn {
+      text-align: center;
+      justify-content: center;
+      display:flex;
+      margin-left: 36cm;
+      width:80px;
+      margin-top: 0.5cm;
+      height:20px;
+      padding: 0.5rem;
+    }
+    .popup{
+      width:400px;
+      background-color: white;
+      border-radius: 2rem;
+      position: absolute;
+      text-align: left;
+      color:#86A999;
+      font-size: 2rem;
+      height:310px;
+      visibility:hidden;
+      margin-left: 30cm;
+      top: 105px;
+      /* transform: translate(-50%,-50%) scale(0.1); */
+
+    }
+    
+    .fil{
+      visibility: visible;
+      /* transform: translate(-50%,-50%),scale(1); */
+      transition: transform 0.4s, top 0.4s;
+    }
+    .h1 img{
+      width: 300px;
+      height: 150px;
+      border-radius: 2rem;
+    }
+    .h1 img:hover{
+      transform: scale(1.1);
+    }
+    .h1 {
+      font-size:2rem;
+    }
+    .p1{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p2{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p3{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p4{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p5{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p6{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p7{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p8{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p9{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p10{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p11{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    .p12{margin-left: 2cm;
+      margin-right: 2cm;
+    }
+
+    
+  </style>
+  
+</head>
+<header class="header">
+  <img src="logo.png" alt="logo" class="logo">
+  <nav class="navbar">
+    <ul class="heads" style="color:blue;">
+      <li><a class="anchor" href="index.html">home</a></li>
+      <li><a class="anchor" href="buy.html">buy</a></li>
+      <li><a class="anchor" href="http://localhost/filess/index.php">sell</a></li>
+      <li><a class="anchor" href="About.html">About</a></li>
+      <li><a href="buy.html"> <button style="background-color: #337ab7; color: white;">BOOK NOW</button></a></li>
+    </ul>
+
+  </nav>
+</header>
+<body style="background-color: #E8E3D3;">
+  <div class="filter">
+    <button type="submit" class="btn" onclick="filter()" style="width:100px;height:30px; border-radius:1rem; background-color: #a7c1b5; text-align: center;">Filter&nbsp;&nbsp;<ion-icon name="filter-sharp"></ion-icon></button>
+    <div class="popup" id="pop">
+      <form>  <b><br><br>
+      &nbsp;TYPE: <br>&nbsp;&nbsp;&nbsp; <input type="radio" ><label>Flat</label><input type="radio" ><label >House</label><BR><br>
+        &nbsp;NO. OF ROOMS:<br>&nbsp;&nbsp;&nbsp;<input type="radio"><label>1BHK</label>
+      <input type="radio"><label>2BHK</label>
+      <input type="radio"><label>3BHK</label><br><br>
+      &nbsp;ADDRESS:<br>&nbsp;&nbsp;&nbsp; <select style="background-color:#a7c1b5 ;"> 
+        <option>--select--</option>
+        <option>Dehradun</option>
+        <option>Delhi</option>
+        <option>Noida</option>
+        <option>Gurgaon</option>
+      </b>
+      </select><br><br>
+      <button style="margin-left: 40%; width:100px; height: 30px; border-radius: 1rem; background-color: #a7c1b5" onclick="close()">Find</button> </form>
+    </div>
+  </div>
+ <div class="h1" >
+  <a href="p1.html"><img class="p1"  src="p1.jpg"></a>
+  <a href="p2.html"><img class="p2" src="p2.jpg"></a>
+    <a href="p3.html"><img class="p3" src="p3.jpg"></a> 
+    <div style="display:flex;">
+    <div class="p1" style="margin-left: 2.5cm;
+    margin-right: 2cm;">
+      Rent: 10K/month<br>
+      1 <ion-icon name="bed-sharp"></ion-icon> | 400 sqft<br>
+      Perfect for bachelors.
+    </div>
+    <div class="p2" style="margin-left: 5.25cm;
+    margin-right: 2cm;">
+      Rent: 25K/month<br>
+      2 <ion-icon name="bed-sharp"></ion-icon> | 1000 sqft <br>
+      Perfect for a nuclear family.
+    </div>
+      <div class="p3" style="margin-left: 3.75cm;
+      margin-right: 2cm;">
+      Rent: 50K/month<br>
+      4 <ion-icon name="bed-sharp"></ion-icon> | 5000 sq <br>
+      Permium house with ultimate luxury. 
+      </div><br></div><br>
+      <a href="p4.html"><img class="p4" src="p4.jpg"></a>
+      <a href="p5.html"><img class="p5" src="p5.jpg"></a>
+      <a href="p6.html"><img class="p6" src="p6.jpg"></a><br>
+    <div style="display:flex;">
+    <div class="p4" style="margin-left: 2.5cm;
+    margin-right: 2cm;">
+      Rent: 30K/month<br>
+      3 <ion-icon name="bed-sharp"></ion-icon> | 400 sq <br>
+      2 km away from hospital.<br> 3 km away from railway station.
+    </div>
+    
+    <div class="p5" style="margin-left: 2.75cm;
+    margin-right: 2cm;">
+      Rent: 9K/month<br>
+      1 <ion-icon name="bed-sharp"></ion-icon> | 300 sq <br>
+      Pocket friendly.
+    </div>
+    
+    <div class="p6" style="margin-left: 6.50cm;
+    margin-right: 2cm;">
+      Rent: 12K/month<br>
+      1 <ion-icon name="bed-sharp"></ion-icon> | 600 sq <br>
+      Balcony view inculded.
+    </div>
+<br></div><br>
+<a href="p7.html"><img class="p7" src="p7.jpg"></a>
+<a href="p8.html"><img class="p8" src="p8.jpeg"></a>
+<a href="p9.html">  <img class="p9" src="p9.jpg"></a><br>
+    <div style="display:flex;">
+    <div class="p7" style="margin-left: 2.5cm;
+    margin-right: 2cm;">
+      Rent: 15K/month<br>
+      2 <ion-icon name="bed-sharp"></ion-icon> | 1400 sq <br>
+      Kids friendly environment.
+    </div> 
+    <div class="p8" style="margin-left: 4cm;
+    margin-right: 2cm;">
+      Rent: 5K/month<br>
+      1 <ion-icon name="bed-sharp"></ion-icon> | 300 sq <br>
+      Perfect for students.
+    </div>
+    <div class="p9" style="margin-left: 5.50cm;
+    margin-right: 2cm;">
+      Rent: 30K/month<br>
+      4 <ion-icon name="bed-sharp"></ion-icon> | 3000 sq <br>
+      Near the market.
+    </div>
+    
+  </div><br>
+  <a href="p10.html"> <img class="p10" src="p10.jpg"></a>
+  <a href="p11.html"> <img class="p11" src="p11.jpg"></a>
+  <a href="p12.html"> <img class="p12" src="p12.jpg"></a><br>
+    <div style="display:flex;">
+    <div class="p10" style="margin-left: 2.5cm;
+    margin-right: 2cm;">
+      Rent: 18K/month<br>
+      2<ion-icon name="bed-sharp"></ion-icon> | 900 sq <br>
+      Fully furnished.Freshly painted.
+    </div> 
+    <div class="p11" style="margin-left: 2.75cm;
+    margin-right: 2cm;">
+      Rent: 20K/month<br>
+      3 <ion-icon name="bed-sharp"></ion-icon> | 1300 sq <br>
+      Centralised AC.
+    </div>
+    <div class="p12" style="margin-left: 6.20cm;
+    margin-right: 2cm;">
+      Rent: 28K/month<br>
+      4 <ion-icon name="bed-sharp"></ion-icon> | 2500 sq <br>
+      Close to the market.
+    </div>
+    <br><br>
+  </div>
+  </div><br><br>
+  
+  <div style="background-color:#FBF7F2;text-align:center;color:#86A999;font-size: 2rem;">
+    Contact us as at: www.flat4us@gmail.com
+    Phone no.: 1234******
+  </div>
+  <script>
+    let popup = document.getElementById("pop");
+    function filter(){
+       popup.classList.add("fil");
+    }
+    function close(){
+       popup.classList.remove("fil");
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../JS/index.js"></script>
+</body>
+</html>
